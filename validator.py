@@ -54,7 +54,7 @@ def credit_card():
     if re.fullmatch(card_regex, card):
         print(f"\033[1;32m{card}\033[0m :Valid credit card format")
     else:
-        print("\033[44m{card}\033[0mInvalid credit card number format")
+        print(f"\033[44m{card}\033[0mInvalid credit card number format")
 def validate_time():
     print("\nChoose the time format to validate:")
     print("1. 24-hour format")
